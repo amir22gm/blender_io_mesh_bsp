@@ -341,9 +341,9 @@ def mesh_add(mesh_id):
     return obj
 
 
-def entity_add(entity, scale):
+def entity_add(entity=0, scale):
     # Get entity data
-    origin = parse_vec3_safe(entity, 'origin', scale)
+    origin = parse_vec3_safe(entity=0, 'origin', scale)
     angle = [0, 0, 0]
     angle[2] = parse_float_safe(entity, 'angle', 0)
 
